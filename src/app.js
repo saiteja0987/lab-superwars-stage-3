@@ -29,7 +29,7 @@ const initPlayers = (players) => {
     players.forEach((player,index) => {
         detailedPlayers.push({
             name:player,
-            strength:(2+index),
+            strength:getRandomStrength(),
             image:'images/super-' + (index + 1) + '.png',
             type: index%2==0?"hero":"villain",
             id:index+1
